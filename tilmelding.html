@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="generel.css" />
+    <link rel="stylesheet" href="layout.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orienta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <title>NyiRummet</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo.webp" alt="Logo" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Forside</a></li>
+          <li><a href="programmet.html">Programmet</a></li>
+          <li><a href="tilmelding.html">Tilmelding</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Tilmelding</h1>
+      <form id="tilmeldForm">
+        <label>Fornavn:</label>
+        <input type="text" required />
+
+        <label>Efternavn:</label>
+        <input type="text" required />
+
+        <label>Email:</label>
+        <input type="email" required />
+
+        <label>Tlf:</label>
+        <input type="tel" required />
+
+        <button type="submit">GODKEND</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>
+        Ny i Rummet er et begynderkursus, der guider dig trin for trin gennem
+        universet.
+      </p>
+      <p>Mail: kontakt@NyiRummet.dk</p>
+    </footer>
+    <script>
+      document
+        .getElementById("tilmeldForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Du er nu tilmeldt kurset! Vi glæder os til at se dig :)");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

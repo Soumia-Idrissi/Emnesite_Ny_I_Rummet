@@ -1,0 +1,215 @@
+/*Mobil*/
+
+@media (width<=600px) {
+  .menu {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .menu a {
+    font-size: 16px;
+  }
+
+  header {
+    position: sticky;
+    display: flex;
+    margin-top: 1rem;
+    background-color: #0a0d1a;
+    box-shadow: 0 0 20px rgba(130, 180, 255, 0.6);
+    border-radius: 10px;
+  }
+
+  .logo img {
+    width: 50px;
+    height: auto;
+    display: block;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
+
+.foeste_grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.anden_grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.anden_grid_1_1 div {
+  text-align: left;
+  padding: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  background-color: transparent;
+  box-shadow: 0 0 10px rgba(130, 180, 255, 0.6);
+}
+
+.anden_grid_1_1 img {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-bottom: 1rem;
+
+  animation: spin 60s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 15px;
+  background-color: #0a0d1a;
+  box-shadow: 0 0 20px rgba(130, 180, 255, 0.6);
+}
+
+label {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 1rem;
+  background: linear-gradient(90deg, #5b56d6, #e051b4);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(224, 81, 180, 0.5);
+}
+
+/*Destop*/
+
+@media (width>=800px) {
+  .foeste_grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
+
+  .anden_grid_1_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    align-items: start;
+  }
+
+  .anden_grid_1_1 div {
+    text-align: left;
+    padding: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(130, 180, 255, 0.6);
+  }
+
+  .anden_grid_1_1 img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-bottom: 1rem;
+
+    animation: spin 60s linear infinite;
+    transform-origin: 50% 50%;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 15px;
+    background-color: #0a0d1a;
+    box-shadow: 0 0 20px rgba(130, 180, 255, 0.6);
+  }
+
+  label {
+    color: white;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  input {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+  }
+
+  button {
+    padding: 1rem;
+    background: linear-gradient(90deg, #5b56d6, #e051b4);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+
+  button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(224, 81, 180, 0.5);
+  }
+}
